@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- owl carousel link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body class="bg-transparent">
+    <header class="user-page-header sticky">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-opacity-10 p-0 " data-bs-theme="dark">
+            <div class="container-fluid ">
+                <a class="navbar-brand nav-logo" href="index.html"><img width="80px" src="image/netflix_logo.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="">göz at <i class="fa-solid fa-caret-down "></i> </span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+                        <a class="nav-link active " aria-current="page" href=" ">Ana Sayfa</a>
+                        <a class="nav-link " href="#">Diziler</a>
+                        <a class="nav-link " href="#">Filmler</a>
+                        <a class="nav-link " href="#">Yeni ve Popüler </a>
+                        <a class="nav-link  " href="#">Listem</a>
+                        <a class="nav-link " href="#">Dillere Göre Göz at</a>
+                    </div>
+                </div>
+                <div class=" seçiciler d-flex ">
+                    <!-- seacrh start  -->
+                    <div class="search  ">
+                        <form class="d-flex " role="search">
+                            <input class="form-control  bg-transparent" type="search" placeholder="Search..."
+                                aria-label="Search">
+                            <button class="btn " type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M20 20L15.8033 15.8033M18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18C14.6421 18 18 14.6421 18 10.5Z"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <!-- search end -->
+
+                    <!-- bell start -->
+                    <div class="bell position-relative me-lg-2 ms-3 me-3  ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="35px" height="35px"
+                            viewBox="-4 0 32 32" version="1.1">
+                            <path
+                                d="M8.813 25.25h-6.406c-1.25 0-2.344-0.906-2.406-2.188 1.875-1.406 3.063-3.156 3.844-5.094 0.75-1.938 1.031-4.063 1.188-6.313 0.125-1.531 1.125-2.906 2.5-3.938 0.781-0.563 1.625-1.031 2.5-1.313 0-0.094-0.063-0.188-0.063-0.25 0-1.125 0.906-2 2.031-2s2.031 0.875 2.031 2c0 0.063-0.063 0.188-0.063 0.25 0.875 0.281 1.75 0.75 2.531 1.281 1.375 1 2.469 2.375 2.469 3.875 0.125 2.219 0.469 4.438 1.25 6.375 0.781 1.969 1.969 3.75 3.781 5.125-0.063 1.281-1.156 2.188-2.406 2.188h-6.406c-0.313 1.5-1.594 2.594-3.156 2.594s-2.875-1.094-3.219-2.594zM3.219 23.063h17.563c-1.406-1.563-2.375-3.344-2.938-5.25-0.594-1.875-0.875-3.875-1-5.938-0.063-1-0.844-1.906-1.813-2.594-0.938-0.688-2.063-1.063-3-1.063-0.875 0-2.031 0.438-3.031 1.063-0.969 0.625-1.781 1.563-1.813 2.5-0.094 2.031-0.406 4.063-0.969 5.969-0.625 1.938-1.625 3.75-3 5.313zM12.031 26.844c0.156 0 0.219-0.094 0.219-0.25 0-0.188-0.063-0.281-0.219-0.281-1 0-1.75-0.781-1.75-1.75 0-0.188-0.094-0.281-0.25-0.281-0.188 0-0.313 0.094-0.313 0.281 0 1.25 1.031 2.281 2.313 2.281z" />
+                        </svg>
+                        <span class="position-absolute top-0 start-2 translate-middle badge rounded-pill bg-danger">
+                            3
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </div>
+                    <!-- bell end -->
+
+                    <!-- user start -->
+                    <div class="dropdown ">
+                        <a class="btn btn-secondary dropdown-toggle bg-transparent border-0" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img width="30px" src="image/smile-icon.jpg" alt="">
+                        </a>
+                        <ul class="dropdown-menu bg-black border radius-none me-4">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <span class="bg-danger me-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1"
+                                            id="Capa_1" width="20px" height="10px" viewBox="0 0 46.47 46.47"
+                                            xml:space="preserve">
+                                            <g>
+                                                <path
+                                                    d="M3.445,6.322c0-3.423,2.777-6.201,6.201-6.201c3.423,0,6.2,2.777,6.2,6.201c0,3.426-2.777,6.203-6.2,6.203   C6.222,12.524,3.445,9.748,3.445,6.322z M31.562,6.322c0-3.423,2.78-6.201,6.203-6.201s6.201,2.777,6.201,6.201   c0,3.426-2.777,6.203-6.201,6.203C34.343,12.524,31.562,9.748,31.562,6.322z M46.223,31.72   C42.38,40.607,33.38,46.349,23.294,46.349c-10.301,0-19.354-5.771-23.064-14.703c-0.636-1.53,0.089-3.286,1.62-3.922   c0.376-0.155,0.766-0.229,1.15-0.229c1.176,0,2.292,0.696,2.771,1.851c2.777,6.685,9.655,11.004,17.523,11.004   c7.69,0,14.528-4.322,17.421-11.012c0.658-1.521,2.424-2.222,3.943-1.562C46.181,28.433,46.881,30.199,46.223,31.72z" />
+                                            </g>
+                                        </svg></span> user 1</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><span class="bg-success me-1"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1"
+                                            id="Capa_1" width="20px" height="10px" viewBox="0 0 46.47 46.47"
+                                            xml:space="preserve">
+                                            <g>
+                                                <path
+                                                    d="M3.445,6.322c0-3.423,2.777-6.201,6.201-6.201c3.423,0,6.2,2.777,6.2,6.201c0,3.426-2.777,6.203-6.2,6.203   C6.222,12.524,3.445,9.748,3.445,6.322z M31.562,6.322c0-3.423,2.78-6.201,6.203-6.201s6.201,2.777,6.201,6.201   c0,3.426-2.777,6.203-6.201,6.203C34.343,12.524,31.562,9.748,31.562,6.322z M46.223,31.72   C42.38,40.607,33.38,46.349,23.294,46.349c-10.301,0-19.354-5.771-23.064-14.703c-0.636-1.53,0.089-3.286,1.62-3.922   c0.376-0.155,0.766-0.229,1.15-0.229c1.176,0,2.292,0.696,2.771,1.851c2.777,6.685,9.655,11.004,17.523,11.004   c7.69,0,14.528-4.322,17.421-11.012c0.658-1.521,2.424-2.222,3.943-1.562C46.181,28.433,46.881,30.199,46.223,31.72z" />
+                                            </g>
+                                        </svg></span> user 2</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><span class="bg-primary me-1"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1"
+                                            id="Capa_1" width="20px" height="10px" viewBox="0 0 46.47 46.47"
+                                            xml:space="preserve">
+                                            <g>
+                                                <path
+                                                    d="M3.445,6.322c0-3.423,2.777-6.201,6.201-6.201c3.423,0,6.2,2.777,6.2,6.201c0,3.426-2.777,6.203-6.2,6.203   C6.222,12.524,3.445,9.748,3.445,6.322z M31.562,6.322c0-3.423,2.78-6.201,6.203-6.201s6.201,2.777,6.201,6.201   c0,3.426-2.777,6.203-6.201,6.203C34.343,12.524,31.562,9.748,31.562,6.322z M46.223,31.72   C42.38,40.607,33.38,46.349,23.294,46.349c-10.301,0-19.354-5.771-23.064-14.703c-0.636-1.53,0.089-3.286,1.62-3.922   c0.376-0.155,0.766-0.229,1.15-0.229c1.176,0,2.292,0.696,2.771,1.851c2.777,6.685,9.655,11.004,17.523,11.004   c7.69,0,14.528-4.322,17.421-11.012c0.658-1.521,2.424-2.222,3.943-1.562C46.181,28.433,46.881,30.199,46.223,31.72z" />
+                                            </g>
+                                        </svg></span> user 3</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><span class="me-1"><svg
+                                            xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 20 20"
+                                            fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M13.1976 1.21963L3.11967 11.2976C2.9692 11.448 2.87065 11.6426 2.83836 11.8529L2.13291 16.4474C2.03041 17.115 2.60551 17.6901 3.27309 17.5876L7.86762 16.8822C8.07795 16.8499 8.2725 16.7513 8.42297 16.6009L18.5009 6.52294C18.8914 6.13241 18.8914 5.49925 18.5009 5.10872L14.6118 1.21963C14.2213 0.82911 13.5881 0.829111 13.1976 1.21963ZM4.31657 15.404L4.76548 12.4802L13.9047 3.34095L16.3796 5.81583L7.24036 14.9551L4.31657 15.404Z"
+                                                fill="#bbb4b4" />
+                                            <path
+                                                d="M11.442 5.24658L12.5027 4.18592L15.7436 7.42683L14.6829 8.48749L11.442 5.24658Z"
+                                                fill="#bbb4b4" />
+                                        </svg></span> Profil Yönetimi</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><span class="me-2"><svg
+                                            xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#bbb4b4" width="20px"
+                                            height="20px" viewBox="0 0 32 32"
+                                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                                            version="1.1" xml:space="preserve">
+                                            <g id="Icon">
+                                                <path
+                                                    d="M4.96,27.999l0.051,0.001l0.043,-0.004c0.191,-0.024 0.957,-0.171 0.957,-0.996c-0,-4.971 4.029,-9 9,-9c0.661,-0 1.327,-0 1.988,-0c4.97,-0 9,4.029 9,9l-0,0c-0,0.021 0,0.041 0.002,0.061c0.015,0.325 0.153,0.537 0.323,0.676c0.178,0.164 0.415,0.263 0.675,0.263c-0,0 1,-0.057 1,-1c-0,-6.075 -4.925,-11 -11,-11c-0.661,-0 -1.327,-0 -1.988,-0c-6.075,-0 -11,4.925 -11,11c-0,-0.05 0.003,-0.092 0.008,-0.127c-0.005,0.041 -0.008,0.084 -0.008,0.127c-0,0.535 0.42,0.972 0.949,0.999Z" />
+                                                <path
+                                                    d="M15.994,3.988c-2.763,-0 -5.006,2.243 -5.006,5.006c-0,2.763 2.243,5.006 5.006,5.006c2.763,0 5.006,-2.243 5.006,-5.006c0,-2.763 -2.243,-5.006 -5.006,-5.006Zm-0,2c1.659,-0 3.006,1.347 3.006,3.006c0,1.659 -1.347,3.006 -3.006,3.006c-1.659,0 -3.006,-1.347 -3.006,-3.006c-0,-1.659 1.347,-3.006 3.006,-3.006Z" />
+                                            </g>
+                                        </svg></span>Hesap</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><span class="me-1"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M9 10C9 9.40666 9.17595 8.82664 9.50559 8.33329C9.83524 7.83994 10.3038 7.45543 10.852 7.22836C11.4001 7.0013 12.0033 6.94189 12.5853 7.05765C13.1672 7.1734 13.7018 7.45912 14.1213 7.87868C14.5409 8.29824 14.8266 8.83279 14.9424 9.41473C15.0581 9.99667 14.9987 10.5999 14.7716 11.1481C14.5446 11.6962 14.1601 12.1648 13.6667 12.4944C13.1734 12.8241 12.5933 13 12 13V14M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                                stroke="#bbb4b4" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <circle cx="12" cy="17" r="1" fill="#bbb4b4" />
+                                        </svg></span>Yardım Merkezi</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item border-top" href="#">netflix oturumu kapat</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- user end -->
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="inner container-fluid">
+            <div class="row  ">
+                <div class="col-xl-6 col-8 ">
+                    <div class="banner ">
+                        <img  src="image/açlık.webp" alt="">
+                        <div class="suplemental-message d-flex align-items-center">
+                            <div>
+                                <img src="image/top-10.png" alt="">
+                            </div>
+                            <div>
+                                <p>Filmlerde Bugün 6 Numara</p>
+                            </div>
+                        </div>
+
+                        <div class="episode-title">
+                            <p>
+                                Chutimon Chuengcharoensukying ("Bad Genius"), karakter merkezli bu heyecan verici
+                                dramada beklendiğinden fazlasıyla karşılaşılan çaylak bir aşçıyı canlandırıyor.
+                            </p>
+                        </div>
+
+                        <div class="billboard-links ">
+                            <button class="btn btn-lg bg-light play-btn me-2" type="button"><i
+                                    class="fa-solid fa-play"></i>
+                                Oynat</button>
+
+                            <button class="more-data-btn btn btn-lg btn-dark">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard"
+                                    data-name="Info">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM13 10V18H11V10H13ZM12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                                <span>Daha fazla bilgi</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- carousel-start -->
+            <div class="container-fluid carousel-my-list mt-3 ">
+                <div class="row">
+                    <div class="col">
+                        <div class=" carousel-one mt-5 mb-5">
+                            <h5 class="text-white ms-lg-3 ms-1 ">Listem</h5>
+                            <div class=" mt-4">
+                                <div class=" carousel1 owl-carousel owl-theme  prev-next  " >
+                                    <div class="carousel1-item carousel-hover ">
+                                        <img src="image/film1.jpg" alt="">
+                                        <div class="card card-content ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white ">
+                                                    <i class="fa-regular fa-circle-play "></i>
+                                                </button>
+                                                <button id="btn-check" data-bs-trigger="hover"
+                                                    data-bs-content="Listemden çıkar" data-bs-placement="top"
+                                                    data-bs-toggle="popover" type="button"
+                                                    class="btn text-white ">
+                                                    <i class="fa-solid fa-check "></i>
+                                                </button>
+                                                <button class="btn text-white"
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-thumbs-up "></i>
+                                                </button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-circle-chevron-down "></i>
+                                                </button>
+                                            </div>
+                                            <div class="card-body   ">
+                                                <div class="card-title d-flex justify-content-evenly ">
+                                                    <hr>
+                                                    <p class="ms-1">/113 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">çok beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="carousel1-item carousel-hover ">
+                                        <img  src="image/film2.jpg" alt="">
+                                        <div class="card card-content  ">
+                                            <div class="card-icon ">
+                                                <button class="btn text-white ">
+                                                    <i class="fa-regular fa-circle-play "></i>
+                                                </button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-check "></i>
+                                                </button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-thumbs-up "></i>
+                                                </button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-circle-chevron-down "></i>
+                                                </button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/120 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="carousel1-item carousel-hover  ">
+                                        <img src="image/film3.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white ">
+                                                    <i class="fa-regular fa-circle-play "></i>
+                                                    </button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-check "></i>
+                                                    </button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-thumbs-up "></i>
+                                                    </button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-circle-chevron-down "></i>
+                                                    </button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/100 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel1-item carousel-hover  ">
+                                        <img src="image/film4.webp" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white ">
+                                                    <i class="fa-regular fa-circle-play "></i>
+                                                    </button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-check "></i>
+                                                    </button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-thumbs-up "></i>
+                                                    </button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-circle-chevron-down "></i>
+                                                    </button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/100 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel1-item carousel-hover ">
+                                        <img src="image/mylist5.webp" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white ">
+                                                    <i class="fa-regular fa-circle-play "></i>
+                                                    </button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-check "></i>
+                                                    </button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-thumbs-up "></i>
+                                                    </button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-circle-chevron-down "></i>
+                                                </button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/93 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel1-item carousel-hover ">
+                                        <img src="image/mylist6.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white ">
+                                                    <i class="fa-regular fa-circle-play "></i>
+                                                    </button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-check "></i>
+                                                    </button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-thumbs-up "></i>
+                                                    </button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-circle-chevron-down "></i>
+                                                    </button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/130 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel1-item carousel-hover ">
+                                        <img src="image/mylist7.webp" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white ">
+                                                    <i class="fa-regular fa-circle-play "></i>
+                                                    </button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-check "></i>
+                                                    </button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-thumbs-up "></i>
+                                                    </button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-circle-chevron-down "></i>
+                                                    </button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/113 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel1-item carousel-hover ">
+                                        <img src="image/mylist8.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white ">
+                                                    <i  class="fa-regular fa-circle-play "></i>
+                                                    </button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-check "></i>
+                                                    </button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-thumbs-up "></i>
+                                                    </button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button">
+                                                    <i class="fa-solid fa-circle-chevron-down "></i>
+                                                    </button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/95 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- carousel-two -->
+                <div class="row">
+                    <div class="col">
+                        <div class=" carousel-two mt-5 mb-5   ">
+                            <h5 class="text-white ms-lg-3 ms-1">Yakın Zamanda Eklenenler</h5>
+                            <div class="  m-auto mt-4">
+                                <div class=" carousel2 owl-carousel owl-theme prev-next   ">
+                                    <div class="carousel2-item carousel-hover  ">
+                                        <img src="image/add-film1.jpg" alt="">
+                                        <div class="card card-content  ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/80 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="carousel2-item carousel-hover ">
+                                        <img src="image/add-film2.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/113 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel2-item carousel-hover">
+                                        <img src="image/add-film3.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/103 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel2-item carousel-hover ">
+                                        <img src="image/add-film4.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/92 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel2-item carousel-hover ">
+                                        <img src="image/add-film5.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/118 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel2-item carousel-hover ">
+                                        <img src="image/add-film6.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/75 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel2-item carousel-hover ">
+                                        <img src="image/add-film7.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="d-flex  justify-content-evenly mt-3">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/63 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel2-item carousel-hover ">
+                                        <img src="image/add-film8.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/72 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- carousel-three -->
+                <div class="row">
+                    <div class="col">
+                        <div class=" carousel-three mt-5 mb-5   ">
+                            <h5 class="text-white ms-lg-3 ms-1">Gündemdekiler</h5>
+                            <div class="   m-auto mt-4">
+                                <div class=" carousel3 owl-carousel owl-theme prev-next  ">
+                                    <div class="carousel3-item carousel-hover ">
+                                        <img src="image/agenda-movie1.jpg" alt="">
+                                        <div class="card card-content  ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/85 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="carousel3-item carousel-hover ">
+                                        <img src="image/agenda-movie2.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/125 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel3-item carousel-hover ">
+                                        <img src="image/agenda-movie3.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/100 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel3-item carousel-hover ">
+                                        <img src="image/agenda-movie4.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/90 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel3-item carousel-hover ">
+                                        <img src="image/agenda-movie5.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/95 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel3-item carousel-hover ">
+                                        <img height="" src="image/agenda-movie6.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="d-flex  justify-content-evenly mt-3">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/60 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel3-item carousel-hover ">
+                                        <img src="image/agenda-movie7.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/78 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel3-item carousel-hover ">
+                                        <img src="image/agenda-movie8.jpg" alt="">
+                                        <div class="card card-content   ">
+                                            <div class="card-icon">
+                                                <button class="btn text-white "><i
+                                                        class="fa-regular fa-circle-play "></i></button>
+                                                <button id="btn-check" class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="listemden çıkar"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-check "></i></button>
+                                                <button class="btn text-white "
+                                                    data-bs-trigger="hover" data-bs-content="Bunu sevdim"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-thumbs-up "></i></button>
+                                                <button class="btn text-white  "
+                                                    data-bs-trigger="hover" data-bs-content="Daha fazla bilgi"
+                                                    data-bs-placement="top" data-bs-toggle="popover" type="button"><i
+                                                        class="fa-solid fa-circle-chevron-down "></i></button>
+                                            </div>
+                                            <div class="card-body ">
+                                                <div class="card-title d-flex justify-content-evenly">
+                                                    <hr>
+                                                    <p class="ms-1">/78 dk</p>
+                                                </div>
+                                                <p class="text-white ps-2">Çok Beğenildi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-cont">
+            <!-- background image -->
+            <img class="main-bg" src="image/video-back.webp" alt="">
+
+            <!-- background-video -->
+            <iframe class="trailer" width="100%" height="" src="https://www.youtube.com/embed/komEbVtGanY "
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </main>
+
+
+    <footer class="main-page-footer mt-5 ">
+        <div class="container">
+            <div class="soccial-icon d-flex ps-4 pb-5 ">
+                <a href="https://www.facebook.com/netflixturkiye" target="_blank"><i
+                        class="fa-brands fa-facebook-f fa-2x text-white  me-4"></i></a>
+                <a href="https://www.instagram.com/netflixturkiye/" target="_blank"><i
+                        class="fa-brands fa-instagram  fa-2x text-white me-4"></i></a>
+                <a href="https://twitter.com/netflixturkiye" target="_blank"><i
+                        class="fa-brands fa-twitter  fa-2x text-white me-4"></i></a>
+                <a href="https://www.youtube.com/channel/UCeZOywU-zg9j3SxYG0FdLtw" target="_blank"><i
+                        class="fa-brands fa-youtube fa-2x text-white "></i></a>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <ul>
+                        <li><a href="#">Sesli Betimleme</a></li>
+                        <li><a href="#">Yatırımcı İlişkileri</a></li>
+                        <li><a href="#">Yasal Hükümler</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <ul>
+                        <li><a href="#">Yardım Merkezi</a></li>
+                        <li><a href="#">İş İmkanları</a></li>
+                        <li><a href="#">Çerez Tercihleri</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <ul>
+                        <li><a href="#">Hediye Kartı Kullan</a></li>
+                        <li><a href="#">Kullanım Koşulları</a></li>
+                        <li><a href="#">Kurumsal Bilgiler</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <ul>
+                        <li><a href="#">Medya Merkezi</a></li>
+                        <li><a href="#">Gizlilik</a></li>
+                        <li><a href="#">Bize Ulaşın</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row position-relative ps-4 pb-4">
+                <div class="col-lg-2 col-md-4 col-6   ">
+                    <button class="footer-button">Hizmet Kodu</button>
+                </div>
+            </div>
+            <div class="row m-auto ">
+                <div class="col  ">
+                    <p class="textcolor ms-3 "> © 1997-2023 Netflix, Inc.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+
+        var owl = $('.carousel1');
+        owl.owlCarousel({
+            margin: 10,
+            loop: true,
+            dots: false,
+            nav: true,
+            smartSpeed: 4000,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+        var owl = $('.carousel2');
+        owl.owlCarousel({
+            margin: 10,
+            loop: true,
+            dots: false,
+            nav: true,
+            smartSpeed: 4000,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+        var owl = $('.carousel3');
+        owl.owlCarousel({
+            margin: 10,
+            loop: true,
+            dots: false,
+            nav: true,
+            smartSpeed: 4000,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+
+
+        var playBtn = document.querySelector(".play-btn");
+        playBtn.onclick = function () {
+            var trailer = document.querySelector(".trailer");
+            trailer.style.display = "block";
+            var mainBg = document.querySelector(".main-bg");
+            mainBg.style.display = "none"
+            var banner=document.querySelector(".banner");
+            banner.style.visibility="hidden"
+
+
+        }
+    </script>
+
+
+
+
+    <!-- bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+
+
+
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+
+
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.2.1/js/all.js"></script>
+
+</body>
+
+</html>

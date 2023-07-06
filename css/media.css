@@ -1,0 +1,248 @@
+@media screen and (max-width:1279px) {
+    .header-top {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    .content-text {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .content-text h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .content-text h4 {
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+
+    .content-five .accordion * {
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width:970px) {
+    .content-six h3 {
+        font-size: 1.125rem;
+    }
+
+}
+
+@media screen and (max-width:959px) {
+    .svg-icon {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    h3,h5 {
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+
+    .header-content {
+        padding-top: 8rem;
+    }
+
+}
+
+
+@media screen and (max-width:767px) {
+    .backgroud {
+        background: none;
+    }
+
+    .header {
+        padding-left: 0.50rem;
+    }
+
+    .sign-in-cont {
+        height: 750px;
+        margin-bottom: 15px;
+        background: none;
+    }
+
+    .help {
+        padding-left: 15%;
+    }
+
+    .sign-in-footer {
+        border-top: 1px solid rgb(121, 120, 120);
+    }
+
+    .sign-in-footer a {
+        font-size: 13px;
+    }
+
+    .sign-in-footer .form-language {
+        font-size: 13px;
+    }
+
+    .sign-in-footer .footer-svg {
+        top: 12px;
+    }
+
+}
+
+@media screen and (max-width:744px) {
+    .form {
+        flex-wrap: wrap;
+    }
+
+    .btn-start {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .form-language {
+        color: transparent;
+        width: 70px;
+    }
+
+    footer .form-language {
+        color: #dad5d5;
+        width: 130px;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:731px) {
+    .image-cont {
+        height: 560px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .content-five .accordion * {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width:645px) {
+    .banner {
+        margin-top: 40px;
+    }
+}
+
+
+
+@media screen and (max-width:635px) {
+    
+    .image-cont {
+        height: 500px;
+    }
+
+    .suplemental-message p {
+        font-size: 0.85rem;
+    }
+
+    .episode-title {
+        font-size: 0.80rem;
+    }
+
+    .play-btn {
+        font-size: 0.7rem;
+
+    }
+
+    .more-data-btn {
+        font-size: 0.6rem;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .form-language {
+        color: transparent;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .sign-in-cont {
+        height: 820px;
+    }
+}
+
+@media screen and (max-width:451px) {
+    .image-cont {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:446px) {
+    .banner {
+        padding-left: 0.5rem;
+    }
+
+    .image-cont {
+        height: 500px;
+    }
+
+    .suplemental-message p {
+        font-size: 0.7rem;
+    }
+
+    .episode-title {
+        font-size: 0.65rem;
+    }
+
+    .play-btn {
+        font-size: 0.5rem;
+    }
+
+    .more-data-btn {
+        font-size: 0.5rem;
+        margin-top: 5px;
+    }
+
+    .prev-next .owl-nav .owl-prev span {
+        top: -5px;
+    }
+
+    .prev-next .owl-nav .owl-next span {
+        top: -5px;
+    }
+
+}
+
+@media screen and (max-width:360px) {
+    .sign-in-cont {
+        height: 900px;
+    }
+
+    .card-content {
+        font-size: 0.80rem;
+    }
+
+    .card-icon .btn {
+        --bs-btn-padding-x: 0.4rem;
+    }
+
+}
+
+@media screen and (max-width:335px) {
+    .help {
+        padding-left: 0;
+    }
+
+    .image-cont {
+        height: 530px;
+    }
+}
